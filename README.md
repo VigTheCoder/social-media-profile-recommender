@@ -10,5 +10,5 @@ This project implements a profile matching algorithm that calculates similarity 
 - Ideal for applications like social media platforms and job recommendation systems.
 
 ## How It Works
-The algorithm compares profiles based on attributes such as education, occupation, hobbies, city, and more. Similarity scores are calculated for each attribute, and profiles that meet a set threshold are considered a match.
+The algorithm compares profiles based on attributes such as education, occupation, hobbies, city, and more. Similarity scores are calculated for each attribute using appropriate similarity metrics. Cosine Similarity is applied to non-numeric attributes (like hobbies, occupation), while Jaccard Index is used for numeric attributes (like age, city). Once similarity scores are computed for each attribute, an overall similarity score is calculated for each profile. Profiles with a similarity score above the predefined threshold are considered a match and recommended.
 
